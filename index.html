@@ -85,12 +85,13 @@
           </div>
       </div>
       <div class="skills" id="Skills">
-        <div class="head-hobbies">Skills</div>
+        <div class="head-hobbies"><br><br>Skills<br><br></div>
 
         <div class="skills-inner">
  
         <div class="skills-wrap">
-            <img src="images/skill.png" class="skills-image home-image" data-aos="fade-up" data-aos-duration="2000">
+            <br><br>
+            <img src="images/skill.png" class="skills-image" data-aos="fade-up" data-aos-duration="2000">
         </div>
         <div class="ratings" data-aos="fade-left" data-aos-duration="2000">
             <div class="rating">HTML
@@ -200,6 +201,8 @@ body {
 } */
 .home > img{
 width: 200px;
+margin-top: 40px;
+margin-left: 200px;
 }
 .home{
     display: flex;
@@ -209,16 +212,24 @@ width: 200px;
     flex-wrap: wrap-reverse;
 }
 .btn-wrap{
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-  
-    
+    justify-content: space-evenly;  
 }
-.btn1:hover{
+.btn1>button:hover{
     background-color: white;
     border: 2px solid var(--primary-color);
+    border-radius: 10px;
     color: black;
+    
+}
+.btn2>button:hover{
+    
+    background-color: var(--primary-color);
+    border-color:black;
+    border-radius: 10px;
+    color: white;
 }
 .headings{
     display: flex;
@@ -236,20 +247,32 @@ width: 200px;
     font-weight: bolder;
     text-align: center;
 }
-.btn1{
+.hobbies > .head-hobbies{
+    margin-top:120px;
+}
+.skills > .head-hobbies{
+    margin-top:165px;
+}
+.btn1 > button{
+
     background-color: var(--primary-color);
     width: 120px;
     text-align: center;
     padding: 10px;
-  
+    border-color: black;
     border-radius: 10px;
     color: white;
-    margin-right: 20px;
+    margin-right: 100px;
 }
-.button1{
-    width : 120px;
+.btn2 > button{
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    border-color: var(--primary-color);
+    background-color: white;
     
-
 }
 .code,.music,.basketball,.chess,.Badminton{
     width: 80px;
@@ -274,15 +297,6 @@ width: 200px;
     justify-content: center;
     align-items: center;
 }
-.btn2{
-    width: 120px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    color: var(--secondary-color);
-    border: 2px solid black;
-    
-}
 .icon{
     margin: 40px;
 }
@@ -301,6 +315,9 @@ width: 200px;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+}
+.skills-image{
+    width :200px;
 }
 .skills-icon{
     width: 30px;
