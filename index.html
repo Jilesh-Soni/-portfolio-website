@@ -45,17 +45,23 @@
 
               </p>
               <div class="btn-wrap">
-                  
-                  <div class="btn1"><a href="#Skills" onclick="onClick(`Skills-nav`)">Skills</a>
-                </div>
-                  <div class="btn2"><a href="#Hobbies" onclick="onClick(`Hobbies-nav`)">Hobbies</a>
-                </div>
+                <a href="#Skills" onclick="onClick(`Skills-nav`)">
+                  <div class="btn1"> 
+                    <button type="button">Skills</button>
+                  </div>
+                </a>
+                <a href="#Hobbies" onclick="onClick(`Hobbies-nav`)">
+                  <div class="btn2">
+                   <button type="button">Hobbies</button>
+                  </div>
+                </a>
+                
                 </div>
           </div>
-          <div class="image-container">
+          <!-- <div class="image-container"> -->
               <img src="images/jileshpic.jpg" class="home-image" data-aos="fade-up" data-aos-duration="2000">
 
-          </div>
+          <!-- </div> -->
       </div>
       <div class="hobbies" id="Hobbies">
           <div class="head-hobbies"><br><br>My Hobbies</div>
@@ -188,9 +194,12 @@ body {
     width: 175px;
     float: right; 
 } */
-.image-container{
+/* .image-container{
     margin-left: 200px;
-    width: 175px;
+    width: 100px;
+} */
+.home > img{
+width: 200px;
 }
 .home{
     display: flex;
@@ -236,6 +245,11 @@ body {
     border-radius: 10px;
     color: white;
     margin-right: 20px;
+}
+.button1{
+    width : 120px;
+    
+
 }
 .code,.music,.basketball,.chess,.Badminton{
     width: 80px;
